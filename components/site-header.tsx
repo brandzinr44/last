@@ -50,7 +50,7 @@ export function SiteHeader() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 border-b transition-colors duration-300 ${
-          isMenuOpen ? "bg-chart-5 border-background" : "bg-chart-5 border-chart-5/20"
+          isMenuOpen ? "bg-background border-chart-5/40" : "bg-background border-chart-5/40"
         }`}
       >
         <div className="flex items-center justify-between px-5 md:px-6 lg:px-8 py-3 md:py-4">
@@ -64,7 +64,7 @@ export function SiteHeader() {
             >
               <path
                 d="M7.79,293.31V6.81h260.16c146.28,0,233.88,70.94,233.88,189.2,0,34.68-9.74,63.88-28.11,87.75-27.99,36.36-75.88,51.23-119.99,38.57l-196.15-56.25h97.22c62.2,0,91.11-25.4,91.11-63.94s-28.91-64.82-91.11-64.82h-97.22v466.78h97.22c62.2,0,91.11-24.53,91.11-64.82s-28.91-63.94-91.11-63.94h-97.22l196.15-56.25c44.11-12.64,91.99,2.21,119.99,38.59,18.37,23.85,28.11,53.07,28.11,87.74,0,118.26-87.6,189.2-233.88,189.2H7.79v-441.3h0Z"
-                fill="background"
+                fill="chart-5"
               />
             </svg>
           </Link>
@@ -78,13 +78,13 @@ export function SiteHeader() {
           >
             <div className="relative w-5 h-3.5">
               <span
-                className={`absolute left-0 h-[1.9px] transition-all duration-700 ease-in-out ${isMenuOpen ? "top-1/2 -translate-y-1/2 rotate-45 w-full bg-background" : "top-0 w-full bg-background group-hover:w-3/5"}`}
+                className={`absolute left-0 h-[1.9px] transition-all duration-700 ease-in-out ${isMenuOpen ? "top-1/2 -translate-y-1/2 rotate-45 w-full bg-chart-5" : "top-0 w-full bg-chart-5 group-hover:w-3/5"}`}
               />
               <span
-                className={`absolute left-0 top-1/2 -translate-y-1/2 h-[1.9px] transition-all duration-700 ease-in-out ${isMenuOpen ? "w-0 opacity-0 bg-background" : "w-full opacity-100 bg-background group-hover:w-4/5 group-hover:translate-x-1"}`}
+                className={`absolute left-0 top-1/2 -translate-y-1/2 h-[1.9px] transition-all duration-700 ease-in-out ${isMenuOpen ? "w-0 opacity-0 bg-chart-5" : "w-full opacity-100 bg-chart-5 group-hover:w-4/5 group-hover:translate-x-1"}`}
               />
               <span
-                className={`absolute left-0 h-[1.9px] transition-all duration-700 ease-in-out ${isMenuOpen ? "bottom-1/2 translate-y-1/2 -rotate-45 w-full bg-background" : "bottom-0 w-full bg-background group-hover:w-2/5"}`}
+                className={`absolute left-0 h-[1.9px] transition-all duration-700 ease-in-out ${isMenuOpen ? "bottom-1/2 translate-y-1/2 -rotate-45 w-full bg-chart-5" : "bottom-0 w-full bg-chart-5 group-hover:w-2/5"}`}
               />
             </div>
           </button>
@@ -99,7 +99,7 @@ export function SiteHeader() {
           {[0, 1, 2, 3, 4].map((i) => (
             <div
               key={i}
-              className={`flex-1 bg-chart-5 transition-transform ease-[cubic-bezier(0.76,0,0.24,1)] ${isMenuOpen ? "scale-y-100 origin-bottom" : "scale-y-0 origin-top"}`}
+              className={`flex-1 bg-background transition-transform ease-[cubic-bezier(0.76,0,0.24,1)] ${isMenuOpen ? "scale-y-100 origin-bottom" : "scale-y-0 origin-top"}`}
               style={{
                 transitionDuration: "1500ms",
                 transitionDelay: isMenuOpen ? `${i * 50}ms` : `${(4 - i) * 30}ms`,
@@ -117,7 +117,7 @@ export function SiteHeader() {
                 <li key={link.href} className="overflow-hidden">
                   <Link
                     href={link.href}
-                    className={`block text-[70px] md:text-[89px] lg:text-[101px] tracking-tight font-regular leading-[0.95] transition-colors duration-100 ease-in-out ${isActive(link.href) ? "text-background" : "text-background/50 hover:text-background"}`}
+                    className={`block text-[70px] md:text-[89px] lg:text-[101px] tracking-tight font-regular leading-[0.95] transition-colors duration-100 ease-in-out ${isActive(link.href) ? "text-chart-5" : "text-chart-5/50 hover:text-chart-5"}`}
                     style={{
                       transform: isMenuOpen ? "translateY(0)" : "translateY(120%)",
                       opacity: isMenuOpen ? 1 : 0,
@@ -147,7 +147,7 @@ export function SiteHeader() {
                 href="https://instagram.com/adnanbranding"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-[16px] font-medium tracking-tight"
+                className="text-chart-5 text-[16px] font-medium tracking-tight"
               >
                 Instagram
               </a>
@@ -155,7 +155,7 @@ export function SiteHeader() {
                 href="https://facebook.com/adnanbranding"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-[16px] font-medium tracking-tight"
+                className="text-chart-5 text-[16px] font-medium tracking-tight"
               >
                 Facebook
               </a>

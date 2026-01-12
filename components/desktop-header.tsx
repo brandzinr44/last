@@ -125,7 +125,7 @@ export function DesktopHeader() {
           color: white;
         }
       `}</style>
-      <div className="w-full px-8 py-4">
+      <div className="w-full px-10 py-4">
         <div className="flex items-start justify-between gap-8">
           {/* Left: Logo */}
           <Link href="/" className="flex-shrink-0 w-5">

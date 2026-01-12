@@ -73,7 +73,7 @@ export function WorkHeader({
   }
 
   return (
-    <div className="bg-background text-chart-5 font-sans pt-5 lg:pt-10 pb-4 px-1 px-3 lg:px-8">
+    <div className="bg-background text-chart-5 font-sans pt-5 lg:pt-10 pb-4 px-1 px-4 lg:px-8">
       <div className="max-w-full mx-auto">
         <div className="mb-1 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-start">
           <h1
