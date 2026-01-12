@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "Lozinr is a premier branding agency specializing in logo design, visual identity systems, and strategic brand development for global startups and established businesses.",
   keywords: [
     "logo design",
+    "lozinr",
+    "branding",
+    "designer",
+    "adnan akif",
     "brand identity",
     "branding agency",
     "graphic design",
@@ -40,9 +44,9 @@ export const metadata: Metadata = {
   publisher: "Lozinr",
   formatDetection: { email: true, telephone: true, address: true },
   icons: {
-    icon: "https://4mkwknnmlp45gfn8.public.blob.vercel-storage.com/Lozinr%27s.png",
-    shortcut: "https://4mkwknnmlp45gfn8.public.blob.vercel-storage.com/Lozinr%27s.png",
-    apple: "https://4mkwknnmlp45gfn8.public.blob.vercel-storage.com/Lozinr%27s.png",
+    icon: "https://guxjkdyjeyrscewv.public.blob.vercel-storage.com/Favicon.png",
+    shortcut: "https://guxjkdyjeyrscewv.public.blob.vercel-storage.com/Favicon.png",
+    apple: "https://guxjkdyjeyrscewv.public.blob.vercel-storage.com/Favicon.png",
   },
   openGraph: {
     type: "website",
